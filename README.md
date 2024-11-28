@@ -38,3 +38,17 @@ To check the contract code, visit [dVoting Contract Code](https://github.com/Ana
     ```
 
 2. Open your browser and navigate to `http://localhost:3000`.
+
+## Contributing
+
+Contributions are welcome! Feel free to contribute to our project, and don’t hesitate to ask if you have any questions.
+To contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request to the `main` branch.
+
+For major changes, please open an issue first to discuss what you would like to change.
