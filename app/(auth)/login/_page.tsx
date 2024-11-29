@@ -20,10 +20,10 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <Card className="w-[450px] shadow-lg rounded-lg bg-white">
+    <div className="flex items-center justify-center min-h-screen bg-background">
+      <Card className="w-[450px] shadow-lg rounded-lg bg-background">
         <CardHeader>
-          <CardTitle className="text-3xl font-semibold text-gray-800">Login</CardTitle>
+          <CardTitle className="text-3xl font-semibold text-foreground">Login</CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit}>
@@ -36,7 +36,6 @@ export default function LoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="border-gray-300 focus:border-blue-500 py-3 px-4"
                 />
               </div>
               <div className="flex flex-col space-y-2">
@@ -47,13 +46,12 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="border-gray-300 focus:border-blue-500 py-3 px-4"
                 />
               </div>
             </div>
             <CardFooter  className="flex justify-between space-x-4 mt-4">
               <Button variant="outline" onClick={() => router.push('/')} className="w-24">Cancel</Button>
-              <Button type="submit" className="bg-blue-500 text-white hover:bg-blue-600 w-24">Login</Button>
+              <Button type="submit" className="bg-primary text-white hover:bg-primary/90 w-24">Login</Button>
             </CardFooter>
           </form>
         </CardContent>
